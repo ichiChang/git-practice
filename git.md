@@ -31,6 +31,11 @@
 3. 執行 git remote add
    - config 檔案裡面多了 remote
 4. 執行第一次 commit
+   - .git 裡面新增了 COMMIT_EDITMSG, 裡面有我剛剛打的 commit message
+   - object 資料夾裡面也多了新的目錄
+5. 執行 push
+   - 沒有很明顯的變化
+
 ## 3. commit message
 
 我自己的經驗裡，無論是專案或是工作，我們都習慣會在 commit message前面加上前綴來區分 commit 的類別，例如開發新功能就是  
@@ -38,4 +43,3 @@ feature: new feature.....
 修正 bug 就是  
 fix: fix the I/O problem  
 以此類推，我覺得有前綴的情況下會更好區分、尋找特定的 commit.
-e
