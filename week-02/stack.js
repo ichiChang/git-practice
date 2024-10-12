@@ -20,6 +20,9 @@ export default class Stack {
   pop() {
     // TODO
     // 直接使用 Array 的 pop
+    if (this.isEmpty()) {
+      throw new Error("Stack underflow");
+    }
     return this.#items.pop();
   }
 
@@ -27,6 +30,9 @@ export default class Stack {
   peek() {
     // TODO
     // 用長度 - 1 來取得最後一個數
+    if (this.isEmpty()) {
+      throw new Error("Stack is empty");
+    }
     return this.#items[this.#items.length - 1];
   }
 
